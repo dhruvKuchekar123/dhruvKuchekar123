@@ -1,21 +1,21 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Dhruv%20Kuchekar&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20Generative%20AI%20Engineer&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Dhruv%20Kuchekar&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20Software%20Development%20Engineer%20%7C%20AI%20Tools%20Explorer&descAlignY=58&descSize=17&animation=fadeIn" width="100%"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7C3AED&center=true&vCenter=true&width=600&lines=Building+AI-Powered+Full+Stack+Apps+%F0%9F%9A%80;MERN+Stack+%7C+Python+%7C+Generative+AI;Open+to+Internship+Opportunities+%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB;Let%27s+Build+Something+Amazing+Together!)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7C3AED&center=true&vCenter=true&width=700&lines=Building+AI-Powered+Full+Stack+Apps+%F0%9F%9A%80;Open+to+Full+Stack+Developer+Roles;Open+to+Software+Development+Engineer+Roles;MERN+Stack+%7C+Python+%7C+AI+Automation;Let%27s+Build+Something+Amazing+Together!)](https://git.io/typing-svg)
 
 <br/>
 
 > 🏆 **1st Place Winner** — VNPS'26 National Project Showcase (50+ teams)  
 > 🎓 Final Year B.E. Computer Engineering @ VCET Mumbai  
-> 💡 Passionate about AI Agents, LLMs, and scalable full-stack systems
+> 💡 Building scalable full-stack products with AI-assisted workflows and automation
 
 <br/>
 
 [![Email](https://img.shields.io/badge/Gmail-dhruvkuchekar0%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dhruvkuchekar0@gmail.com)
 [![Phone](https://img.shields.io/badge/WhatsApp-+91--8080869407-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/918080869407)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/dhruvkuchekar)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-7C3AED?style=for-the-badge&logo=vercel&logoColor=white)](https://yourportfolio.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dhruv-kuchekar-9601501b1/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-7C3AED?style=for-the-badge&logo=vercel&logoColor=white)](https://dhruv-portfolio-gray.vercel.app/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/dhruvkuchekar)
 
 </div>
@@ -24,7 +24,7 @@
 
 ## 🟢 Open to Opportunities
 
-> 💼 **Actively seeking Full Stack / Generative AI Internship roles** (6-month / full-time)  
+> 💼 **Open to Full Stack Developer and Software Development Engineer roles**  
 > 📍 Mumbai, Maharashtra | Open to Remote & Hybrid  
 > 📧 Reach me directly: **dhruvkuchekar0@gmail.com** | 📞 **+91-8080869407**
 
@@ -34,11 +34,11 @@
 
 ```javascript
 const dhruv = {
-  role:        "Full Stack Developer & Generative AI Engineer",
+  role:        "Full Stack Developer & Software Development Engineer",
   education:   "B.E. Computer Engineering, VCET (2022–2026)",
   experience:  ["Full Stack Developer Intern @ Inlignhn Global Pvt. Ltd."],
-  techStack:   ["MERN", "Python", "REST APIs", "JWT/RBAC", "Claude AI", "n8n"],
-  aiStack:     ["OpenAI Whisper", "Wav2Lip", "PyTorch", "LLMs", "Prompt Engineering"],
+  techStack:   ["MERN", "Python", "REST APIs", "JWT/RBAC", "Cloudinary", "Render"],
+  aiStack:     ["n8n", "ChatGPT", "Claude AI", "Codex", "Perplexity", "Antigravity 2.0"],
   currentlyLearning: ["FastAPI", "RAG Pipelines", "Vector Databases", "AI Agents"],
   achievements: ["🏆 VNPS'26 National Showcase — 1st Place", "🏅 IEEE Best Presenter Award"],
   availableForHire: true,
@@ -76,9 +76,23 @@ const dhruv = {
 **AI & Automation**
 
 ![Claude AI](https://img.shields.io/badge/Claude_AI-7C3AED?style=flat-square&logo=anthropic&logoColor=white)
+![ChatGPT](https://img.shields.io/badge/ChatGPT-10A37F?style=flat-square&logo=openai&logoColor=white)
+![Codex](https://img.shields.io/badge/Codex-111827?style=flat-square&logo=openai&logoColor=white)
+![Perplexity](https://img.shields.io/badge/Perplexity-1FB8CD?style=flat-square&logo=perplexity&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI_Whisper-412991?style=flat-square&logo=openai&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![n8n](https://img.shields.io/badge/n8n_Workflows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+![Antigravity](https://img.shields.io/badge/Antigravity_2.0-FF6B6B?style=flat-square&logo=googlegemini&logoColor=white)
+
+---
+
+## ✨ AI Productivity Edge
+
+I use modern AI tools to speed up ideation, debugging, automation, documentation, and full-stack development workflows.
+
+`n8n` `ChatGPT` `Claude AI` `Codex` `Perplexity` `Antigravity 2.0` `Prompt Engineering` `AI Agents`
+
+---
 
 **Cloud & Tools**
 
@@ -96,7 +110,8 @@ const dhruv = {
 ### 🎬 SyncDub — AI Audio-Video Dubbing & Lip Syncing
 > **1st Place Winner — VNPS'26 National Project Showcase (50+ teams) 🏆**
 
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/dhruvKuchekar123/syncdub)
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/dhruvKuchekar123/SyncDub-AI-based-Audio-Video-Dubbing-and-Lip-Syncing)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Explore-7C3AED?style=flat-square&logo=vercel&logoColor=white)](https://dhruv-portfolio-gray.vercel.app/)
 
 - 🤖 Python-based AI pipeline for **multilingual video dubbing** with **98% frame-accurate lip sync** using Wav2Lip
 - 🎙️ Integrated **OpenAI Whisper** for speech recognition, translation & voice synthesis automation
@@ -109,8 +124,9 @@ const dhruv = {
 
 ### 🏡 Wanderlust — Property Listing Web Application
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-46E3B7?style=flat-square&logo=render)](https://wanderlust-demo.onrender.com)
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/dhruvKuchekar123/wanderlust)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-46E3B7?style=flat-square&logo=render)](https://wanderlust-1-ca6k.onrender.com/signup)
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/dhruvKuchekar123/Wanderlust)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Explore-7C3AED?style=flat-square&logo=vercel&logoColor=white)](https://dhruv-portfolio-gray.vercel.app/)
 
 - 🌐 Production-ready **MERN stack** property listing platform deployed on Render
 - 🔐 Secure authentication with **JWT**, session management & **RBAC** authorization
@@ -159,12 +175,13 @@ const dhruv = {
 
 <div align="center">
 
-**I'm actively looking for Full Stack & Generative AI Internship opportunities!**  
-If my profile interests you, don't hesitate to reach out directly 👇
+**I'm open to Full Stack Developer and Software Development Engineer opportunities!**  
+Open to Full Stack Developer and Software Development Engineer roles. If my profile interests you, don't hesitate to reach out directly 👇
 
 [![Email Me](https://img.shields.io/badge/📧_Email_Me-dhruvkuchekar0%40gmail.com-EA4335?style=for-the-badge)](mailto:dhruvkuchekar0@gmail.com)
 [![WhatsApp](https://img.shields.io/badge/💬_WhatsApp-+91--8080869407-25D366?style=for-the-badge)](https://wa.me/918080869407)
-[![LinkedIn](https://img.shields.io/badge/🔗_LinkedIn-Connect_Now-0A66C2?style=for-the-badge)](https://linkedin.com/in/dhruvkuchekar)
+[![LinkedIn](https://img.shields.io/badge/🔗_LinkedIn-Connect_Now-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/dhruv-kuchekar-9601501b1/)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-View_Work-7C3AED?style=for-the-badge)](https://dhruv-portfolio-gray.vercel.app/)
 
 </div>
 
