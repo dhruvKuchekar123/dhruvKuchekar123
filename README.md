@@ -1,198 +1,333 @@
-<div align="center">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv Kuchekar | Full Stack Dev & AI Builder</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            purple: '#7C3AED',
+                            dark: '#0f0c29',
+                            darker: '#0a081a',
+                            light: '#e2e8f0',
+                        }
+                    },
+                    animation: {
+                        'gradient-x': 'gradient-x 15s ease infinite',
+                    },
+                    keyframes: {
+                        'gradient-x': {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f0c29;
+            color: #f8fafc;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(124, 58, 237, 0.4);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #a855f7, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a081a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #7C3AED;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-purple selection:text-white">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Dhruv%20Kuchekar&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20Software%20Development%20Engineer%20%7C%20AI%20Tools%20Explorer&descAlignY=58&descSize=17&animation=fadeIn" width="100%"/>
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 top-0 border-b border-white/5 bg-brand-dark/80 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-bold text-xl tracking-tighter">
+                    <span class="text-white">Dhruv</span><span class="text-brand-purple">.</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 text-sm font-medium">
+                        <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                        <a href="#skills" class="text-gray-300 hover:text-white transition">Skills</a>
+                        <a href="#projects" class="text-gray-300 hover:text-white transition">Projects</a>
+                        <a href="#contact" class="bg-brand-purple hover:bg-purple-600 text-white px-4 py-2 rounded-lg transition shadow-lg shadow-purple-500/30">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7C3AED&center=true&vCenter=true&width=700&lines=Building+AI-Powered+Full+Stack+Apps+%F0%9F%9A%80;Open+to+Full+Stack+Developer+Roles;Open+to+Software+Development+Engineer+Roles;MERN+Stack+%7C+Python+%7C+AI+Automation;Let%27s+Build+Something+Amazing+Together!)](https://git.io/typing-svg)
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-[128px] opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-pink-600 rounded-full mix-blend-multiply filter blur-[128px] opacity-20 animate-pulse"></div>
+        
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300 mb-6">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                </span>
+                Open to SDE & Full Stack Roles
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                Hi, I'm Dhruv Kuchekar<br/>
+                <span class="gradient-text animate-gradient-x">Full Stack Dev & AI Builder</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400">
+                Bridging the gap between intelligent AI models and scalable, user-facing digital products. 🏆 1st Place Winner at VNPS'26.
+            </p>
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="https://github.com/dhruvKuchekar123" target="_blank" class="glass-card px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-white/5 transition">
+                    <i class="fab fa-github text-xl"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/dhruv-kuchekar-9601501b1/" target="_blank" class="glass-card px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-white/5 transition text-[#0A66C2]">
+                    <i class="fab fa-linkedin text-xl"></i> LinkedIn
+                </a>
+                <a href="mailto:dhruvkuchekar0@gmail.com" class="glass-card px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-white/5 transition text-pink-400">
+                    <i class="fas fa-envelope text-xl"></i> Email
+                </a>
+            </div>
+        </div>
+    </section>
 
-<br/>
-
-> 🏆 **1st Place Winner** — VNPS'26 National Project Showcase (50+ teams)  
-> 🎓 Final Year B.E. Computer Engineering @ VCET Mumbai  
-> 💡 Building scalable full-stack products with AI-assisted workflows and automation
-
-<br/>
-
-[![Email](https://img.shields.io/badge/Gmail-dhruvkuchekar0%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dhruvkuchekar0@gmail.com)
-[![Phone](https://img.shields.io/badge/WhatsApp-+91--8080869407-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/918080869407)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dhruv-kuchekar-9601501b1/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-7C3AED?style=for-the-badge&logo=vercel&logoColor=white)](https://dhruv-portfolio-gray.vercel.app/)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/dhruvkuchekar)
-
-</div>
-
----
-
-## 🟢 Open to Opportunities
-
-> 💼 **Open to Full Stack Developer and Software Development Engineer roles**  
-> 📍 Mumbai, Maharashtra | Open to Remote & Hybrid  
-> 📧 Reach me directly: **dhruvkuchekar0@gmail.com** | 📞 **+91-8080869407**
-
----
-
-## 👨‍💻 About Me
-
-```javascript
-const dhruv = {
-  role:        "Full Stack Developer & Software Development Engineer",
-  education:   "B.E. Computer Engineering, VCET (2022–2026)",
-  experience:  ["Full Stack Developer Intern @ Inlignhn Global Pvt. Ltd."],
-  techStack:   ["MERN", "Python", "REST APIs", "JWT/RBAC", "Cloudinary", "Render"],
-  aiStack:     ["n8n", "ChatGPT", "Claude AI", "Codex", "Perplexity", "Antigravity 2.0"],
-  currentlyLearning: ["FastAPI", "RAG Pipelines", "Vector Databases", "AI Agents"],
-  achievements: ["🏆 VNPS'26 National Showcase — 1st Place", "🏅 IEEE Best Presenter Award"],
-  availableForHire: true,
-  contact:     "dhruvkuchekar0@gmail.com"
+    <!-- About Code Snippet -->
+    <section id="about" class="py-20 bg-brand-darker border-y border-white/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-4 mb-10">
+                <div class="h-px bg-white/10 flex-1"></div>
+                <h2 class="text-2xl font-bold text-gray-200">👨‍💻 About Me</h2>
+                <div class="h-px bg-white/10 flex-1"></div>
+            </div>
+            
+            <div class="glass-card rounded-xl overflow-hidden shadow-2xl">
+                <div class="flex items-center px-4 py-3 border-b border-white/5 bg-black/40">
+                    <div class="flex space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div class="ml-4 text-xs text-gray-500 font-mono">dhruv.js</div>
+                </div>
+                <div class="p-6 overflow-x-auto">
+<pre class="font-mono text-sm leading-relaxed">
+<span class="text-pink-500">const</span> <span class="text-blue-400">dhruv</span> <span class="text-white">=</span> {
+  <span class="text-gray-400">role:</span>             <span class="text-green-400">"Full Stack Developer & AI Builder"</span>,
+  <span class="text-gray-400">education:</span>        <span class="text-green-400">"B.E. Computer Engineering, VCET (2022–2026)"</span>,
+  <span class="text-gray-400">experience:</span>       [<span class="text-green-400">"Ex-Full Stack Intern @ Inlignhn Global Pvt. Ltd."</span>],
+  <span class="text-gray-400">corePhilosophy:</span>   <span class="text-green-400">"Build fast, fail safely, and optimize for scalable business impact."</span>,
+  <span class="text-gray-400">aiStack:</span>          [<span class="text-green-400">"n8n Orchestration"</span>, <span class="text-green-400">"LLMs"</span>, <span class="text-green-400">"Agentic Workflows"</span>],
+  <span class="text-gray-400">availableForHire:</span> <span class="text-purple-400">true</span>
 };
-```
+</pre>
+                </div>
+            </div>
+        </div>
+    </section>
 
----
+    <!-- Skills -->
+    <section id="skills" class="py-20 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center">Technical Arsenal</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Frontend -->
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-lg flex items-center justify-center text-2xl mb-4">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Frontend & UI</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">React.js</span>
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">JavaScript (ES6+)</span>
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">Tailwind CSS</span>
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">HTML5/CSS3</span>
+                    </div>
+                </div>
 
-## 🛠️ Tech Stack
+                <!-- Backend -->
+                <div class="glass-card p-6 rounded-xl">
+                    <div class="w-12 h-12 bg-green-500/20 text-green-400 rounded-lg flex items-center justify-center text-2xl mb-4">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Backend & DB</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">Node.js</span>
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">Python</span>
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">Express.js</span>
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">MongoDB</span>
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">MySQL</span>
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">REST APIs</span>
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">JWT / RBAC</span>
+                    </div>
+                </div>
 
-**Languages**
+                <!-- AI -->
+                <div class="glass-card p-6 rounded-xl border-purple-500/30">
+                    <div class="w-12 h-12 bg-purple-500/20 text-purple-400 rounded-lg flex items-center justify-center text-2xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">AI & Automation</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 border border-purple-500/30 text-purple-300">n8n Workflows</span>
+                        <span class="px-3 py-1 text-xs rounded-full bg-purple-500/20 border border-purple-500/30 text-purple-300">AI Agents</span>
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">OpenAI Whisper</span>
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">Gemini Vision</span>
+                        <span class="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10">Prompt Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+    <!-- Projects -->
+    <section id="projects" class="py-20 bg-brand-darker border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-4 text-center">Featured Work</h2>
+            <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">Architecting full-stack solutions and AI workflows to solve real-world bottlenecks.</p>
+            
+            <div class="space-y-12">
+                <!-- Project 1 -->
+                <div class="glass-card rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center border-l-4 border-l-purple-500">
+                    <div class="flex-1 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-2xl font-bold">Kaccha Bill Bot</h3>
+                            <span class="bg-purple-500/20 text-purple-300 text-xs px-2 py-1 rounded">AI Agent</span>
+                        </div>
+                        <p class="text-gray-300 font-medium">Agentic Invoice Automation Workflow</p>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            <strong class="text-white">Problem:</strong> Manual entry of messy handwritten shop bills into bookkeeping ledgers is error-prone.<br/>
+                            <strong class="text-white">Solution:</strong> Built an agentic workflow using n8n and a Telegram Bot to convert photos into verified digital invoices.<br/>
+                            <strong class="text-white">Architecture:</strong> Designed a deterministic rules layer combining Gemini Vision data extraction with a human-in-the-loop safeguard, ensuring the agent fails safely instead of silently trusting AI.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-xs font-mono text-purple-400">#n8n</span>
+                            <span class="text-xs font-mono text-purple-400">#GeminiVision</span>
+                            <span class="text-xs font-mono text-purple-400">#TelegramAPI</span>
+                        </div>
+                        <div class="pt-4">
+                            <a href="https://github.com/dhruvKuchekar123/Kaccha-Bill-Bot" target="_blank" class="text-sm hover:text-purple-400 transition flex items-center gap-2"><i class="fab fa-github"></i> View Repository</a>
+                        </div>
+                    </div>
+                </div>
 
-**Frontend**
+                <!-- Project 2 -->
+                <div class="glass-card rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center border-l-4 border-l-pink-500">
+                    <div class="flex-1 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-2xl font-bold">SyncDub</h3>
+                            <span class="bg-pink-500/20 text-pink-300 text-xs px-2 py-1 rounded">🏆 1st Place VNPS'26</span>
+                        </div>
+                        <p class="text-gray-300 font-medium">AI Audio-Video Dubbing Pipeline</p>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            <strong class="text-white">Problem:</strong> Video localization is highly expensive and manually intensive.<br/>
+                            <strong class="text-white">Solution:</strong> Optimized Python AI pipeline for multilingual video dubbing achieving 98% frame-accurate lip sync.<br/>
+                            <strong class="text-white">Architecture:</strong> Modular MVC pipeline (Audio Extraction → OpenAI Whisper STT → TTS → Wav2Lip Generation). Reduced localization costs by 80% and PyTorch latency by 40%.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-xs font-mono text-pink-400">#Python</span>
+                            <span class="text-xs font-mono text-pink-400">#OpenAIWhisper</span>
+                            <span class="text-xs font-mono text-pink-400">#Wav2Lip</span>
+                            <span class="text-xs font-mono text-pink-400">#PyTorch</span>
+                        </div>
+                        <div class="pt-4">
+                            <a href="https://github.com/dhruvKuchekar123/SyncDub-AI-based-Audio-Video-Dubbing-and-Lip-Syncing" target="_blank" class="text-sm hover:text-pink-400 transition flex items-center gap-2"><i class="fab fa-github"></i> View Repository</a>
+                        </div>
+                    </div>
+                </div>
 
-![React](https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+                <!-- Project 3 -->
+                <div class="glass-card rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center border-l-4 border-l-blue-500">
+                    <div class="flex-1 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-2xl font-bold">Wanderlust</h3>
+                            <span class="bg-blue-500/20 text-blue-300 text-xs px-2 py-1 rounded">Full Stack MERN</span>
+                        </div>
+                        <p class="text-gray-300 font-medium">Property Listing Web Application</p>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            <strong class="text-white">Problem:</strong> Need for a seamless, secure, and fast platform for managing property listings and bookings.<br/>
+                            <strong class="text-white">Solution:</strong> A production-ready MERN stack platform featuring responsive UIs and robust backend routing.<br/>
+                            <strong class="text-white">Architecture:</strong> Developed 10+ REST APIs secured with JWT and RBAC. Integrated Cloudinary for media and Mapbox for location search. Hosted scalable backend on Render.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-xs font-mono text-blue-400">#MongoDB</span>
+                            <span class="text-xs font-mono text-blue-400">#React.js</span>
+                            <span class="text-xs font-mono text-blue-400">#Node.js</span>
+                            <span class="text-xs font-mono text-blue-400">#TailwindCSS</span>
+                        </div>
+                        <div class="pt-4 flex gap-6">
+                            <a href="https://wanderlust-1-ca6k.onrender.com/signup" target="_blank" class="text-sm hover:text-blue-400 transition flex items-center gap-2"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/dhruvKuchekar123/Wanderlust" target="_blank" class="text-sm hover:text-blue-400 transition flex items-center gap-2"><i class="fab fa-github"></i> View Repository</a>
+                        </div>
+                    </div>
+                </div>
 
-**Backend & Databases**
+            </div>
+        </div>
+    </section>
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+    <!-- Footer / Contact -->
+    <section id="contact" class="py-12 border-t border-white/10 bg-black">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold mb-6">Let's Build Something Together</h2>
+            <p class="text-gray-400 mb-8">I am actively looking for Full Stack Developer and SDE roles. My inbox is always open.</p>
+            <a href="mailto:dhruvkuchekar0@gmail.com" class="inline-block bg-white text-black font-bold py-3 px-8 rounded-full hover:scale-105 transition transform shadow-lg shadow-white/20">
+                Say Hello
+            </a>
+            
+            <div class="mt-12 flex justify-center gap-6 text-gray-500">
+                <a href="https://github.com/dhruvKuchekar123" target="_blank" class="hover:text-white transition text-2xl"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dhruv-kuchekar-9601501b1/" target="_blank" class="hover:text-[#0A66C2] transition text-2xl"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/918080869407" target="_blank" class="hover:text-[#25D366] transition text-2xl"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="mt-8 text-xs text-gray-600">&copy; 2026 Dhruv Kuchekar. Built with ❤️ and Code.</p>
+        </div>
+    </section>
 
-**AI & Automation**
-
-![Claude AI](https://img.shields.io/badge/Claude_AI-7C3AED?style=flat-square&logo=anthropic&logoColor=white)
-![ChatGPT](https://img.shields.io/badge/ChatGPT-10A37F?style=flat-square&logo=openai&logoColor=white)
-![Codex](https://img.shields.io/badge/Codex-111827?style=flat-square&logo=openai&logoColor=white)
-![Perplexity](https://img.shields.io/badge/Perplexity-1FB8CD?style=flat-square&logo=perplexity&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI_Whisper-412991?style=flat-square&logo=openai&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n_Workflows-EA4B71?style=flat-square&logo=n8n&logoColor=white)
-![Antigravity](https://img.shields.io/badge/Antigravity_2.0-FF6B6B?style=flat-square&logo=googlegemini&logoColor=white)
-
----
-
-## ✨ AI Productivity Edge
-
-I use modern AI tools to speed up ideation, debugging, automation, documentation, and full-stack development workflows.
-
-`n8n` `ChatGPT` `Claude AI` `Codex` `Perplexity` `Antigravity 2.0` `Prompt Engineering` `AI Agents`
-
----
-
-**Cloud & Tools**
-
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=black)
-![MongoDB Atlas](https://img.shields.io/badge/MongoDB_Atlas-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=flat-square&logo=cloudinary&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
-
----
-
-## 🚀 Featured Projects
-
-### 🎬 SyncDub — AI Audio-Video Dubbing & Lip Syncing
-> **1st Place Winner — VNPS'26 National Project Showcase (50+ teams) 🏆**
-
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/dhruvKuchekar123/SyncDub-AI-based-Audio-Video-Dubbing-and-Lip-Syncing)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Explore-7C3AED?style=flat-square&logo=vercel&logoColor=white)](https://dhruv-portfolio-gray.vercel.app/)
-
-- 🤖 Python-based AI pipeline for **multilingual video dubbing** with **98% frame-accurate lip sync** using Wav2Lip
-- 🎙️ Integrated **OpenAI Whisper** for speech recognition, translation & voice synthesis automation
-- ⚡ Reduced video localization cost by **80%** and PyTorch model latency by **40%**
-- 🏗️ Modular MVC pipeline: audio extraction → speech-to-text → text-to-speech → lip-sync generation
-
-`Python` `OpenAI Whisper` `Wav2Lip` `PyTorch` `MVC Architecture`
-
----
-
-### 🏡 Wanderlust — Property Listing Web Application
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-46E3B7?style=flat-square&logo=render)](https://wanderlust-1-ca6k.onrender.com/signup)
-[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/dhruvKuchekar123/Wanderlust)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Explore-7C3AED?style=flat-square&logo=vercel&logoColor=white)](https://dhruv-portfolio-gray.vercel.app/)
-
-- 🌐 Production-ready **MERN stack** property listing platform deployed on Render
-- 🔐 Secure authentication with **JWT**, session management & **RBAC** authorization
-- 📍 **10+ RESTful APIs** for listings, bookings, media uploads & Mapbox-powered location search
-- ☁️ Cloudinary image storage + MongoDB Atlas for scalable cloud data management
-
-`MongoDB` `Express.js` `React.js` `Node.js` `Tailwind CSS` `Cloudinary` `Mapbox`
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=dhruvKuchekar123&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" height="180"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dhruvKuchekar123&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="180"/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=dhruvKuchekar123&theme=tokyonight&hide_border=true" width="60%"/>
-
-</div>
-
----
-
-## 🏅 Certifications & Achievements
-
-| 🏆 Achievement | Details |
-|---|---|
-| 🥇 VNPS'26 National Showcase | **1st Place** out of 50+ teams for SyncDub |
-| 🏅 IEEE Best Presenter Award | Outstanding computer architecture paper presentation |
-| 📜 Generative AI Certification | LLMs, pipeline integration & neural fine-tuning |
-| 📜 DSA Certification | Advanced data structures & performance analysis |
-| 📜 Infosys Java (InfyTQ) | Java, OOP & SQL certified |
-
----
-
-## 📚 Currently Learning
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![RAG](https://img.shields.io/badge/RAG_Pipelines-7C3AED?style=flat-square&logo=openai&logoColor=white)
-![Vector DB](https://img.shields.io/badge/Vector_Databases-FF6B6B?style=flat-square&logo=pinecone&logoColor=white)
-![AI Agents](https://img.shields.io/badge/AI_Agents-FF9500?style=flat-square&logo=anthropic&logoColor=white)
-
----
-
-## 📬 Hire Me / Let's Connect
-
-<div align="center">
-
-**I'm open to Full Stack Developer and Software Development Engineer opportunities!**  
-Open to Full Stack Developer and Software Development Engineer roles. If my profile interests you, don't hesitate to reach out directly 👇
-
-[![Email Me](https://img.shields.io/badge/📧_Email_Me-dhruvkuchekar0%40gmail.com-EA4335?style=for-the-badge)](mailto:dhruvkuchekar0@gmail.com)
-[![WhatsApp](https://img.shields.io/badge/💬_WhatsApp-+91--8080869407-25D366?style=for-the-badge)](https://wa.me/918080869407)
-[![LinkedIn](https://img.shields.io/badge/🔗_LinkedIn-Connect_Now-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/dhruv-kuchekar-9601501b1/)
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-View_Work-7C3AED?style=for-the-badge)](https://dhruv-portfolio-gray.vercel.app/)
-
-</div>
-
----
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer" width="100%"/>
-
-![Profile Views](https://komarev.com/ghpvc/?username=dhruvKuchekar123&color=7C3AED&style=flat-square&label=Profile+Views)
-
-**⭐ If you like my work, consider starring my repos!**
-
-</div>
+</body>
+</html>
